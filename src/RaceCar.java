@@ -18,8 +18,8 @@ public class RaceCar {
     }
 
     public static RaceCar race(RaceCar car1, RaceCar car2) {
-        double speed1 = Math.random();
-        double speed2 = Math.random();
+        double speed1 = Math.random() * TOP_SPEED;
+        double speed2 = Math.random() * TOP_SPEED;
         if (speed1 > speed2) {
             return car1;
         }
